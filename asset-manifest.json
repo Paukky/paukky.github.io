@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/paukky.github.io/static/css/main.de7e23de.css",
+    "main.js": "/paukky.github.io/static/js/main.d9792de0.js",
+    "static/media/BlushBar.png": "/paukky.github.io/static/media/BlushBar.50eec1bdf44f6a226461.png",
+    "static/media/choi.png": "/paukky.github.io/static/media/choi.7a4d8dc3b126a386f5a1.png",
+    "static/media/OnlyFantasia.png": "/paukky.github.io/static/media/OnlyFantasia.e3bfb44d679f3986897c.png",
+    "static/media/Easybank.png": "/paukky.github.io/static/media/Easybank.fd67886aecec580a975e.png",
+    "static/media/roboto-all-700-normal.woff": "/paukky.github.io/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
+    "static/media/saira-all-500-normal.woff": "/paukky.github.io/static/media/saira-all-500-normal.3371d67126d77a8c1f3a.woff",
+    "static/media/AdviceGen.png": "/paukky.github.io/static/media/AdviceGen.9dc99b0c953d89fd755f.png",
+    "static/media/Github.png": "/paukky.github.io/static/media/Github.22db967b23c261c549a4.png",
+    "static/media/roboto-latin-700-normal.woff2": "/paukky.github.io/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
+    "static/media/roboto-cyrillic-ext-700-normal.woff2": "/paukky.github.io/static/media/roboto-cyrillic-ext-700-normal.be4d02458ce53887dc37.woff2",
+    "static/media/saira-latin-500-normal.woff2": "/paukky.github.io/static/media/saira-latin-500-normal.40173f86204bee2d960f.woff2",
+    "static/media/roboto-latin-ext-700-normal.woff2": "/paukky.github.io/static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
+    "static/media/roboto-cyrillic-700-normal.woff2": "/paukky.github.io/static/media/roboto-cyrillic-700-normal.d010f1f324e111a22e53.woff2",
+    "static/media/saira-latin-ext-500-normal.woff2": "/paukky.github.io/static/media/saira-latin-ext-500-normal.59c1f8f7a48e2b307fd8.woff2",
+    "static/media/roboto-greek-700-normal.woff2": "/paukky.github.io/static/media/roboto-greek-700-normal.50e795c1345353b0e996.woff2",
+    "static/media/roboto-vietnamese-700-normal.woff2": "/paukky.github.io/static/media/roboto-vietnamese-700-normal.3425a701027d0699e369.woff2",
+    "static/media/saira-vietnamese-500-normal.woff2": "/paukky.github.io/static/media/saira-vietnamese-500-normal.0c5f7f1096a75dd7e473.woff2",
+    "static/media/roboto-greek-ext-700-normal.woff2": "/paukky.github.io/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
+    "index.html": "/paukky.github.io/index.html",
+    "main.de7e23de.css.map": "/paukky.github.io/static/css/main.de7e23de.css.map",
+    "main.d9792de0.js.map": "/paukky.github.io/static/js/main.d9792de0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de7e23de.css",
+    "static/js/main.d9792de0.js"
+  ]
+}
