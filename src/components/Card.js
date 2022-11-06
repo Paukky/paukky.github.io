@@ -4,8 +4,6 @@ import React from 'react'
 
 const Card = ({image, alt, link}) => {
 
-
-
   return (
   <Box>
       <Box display={'flex'} alignItems={'center'} justifyContent={'center'} role="group">
@@ -22,7 +20,7 @@ const Card = ({image, alt, link}) => {
           >
           {alt}
         </Text>
-        <Link href={link}>
+        <Link href={link} isExternal>
           <Image 
             borderRadius={'xl'} 
             mb={2}

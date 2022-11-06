@@ -7,11 +7,12 @@ import AdviceGen from '../assets/AdviceGen.png'
 import Easybank from '../assets/Easybank.png'
 import Github from '../assets/Github.png'
 import Choi from '../assets/choi.png'
+import Plushie from '../assets/Plushie.png'
 const srces = [
   {
-   img: OnlyFantasia,
-   alt: "OnlyFantasia",
-   link: "https://onlyfantasia.netlify.app/"
+   img: Plushie,
+   alt: "Plushie Ecommerce",
+   link: "https://ecommerce-project-eight.vercel.app/"
   },
   {
     img: BlushBar,
@@ -41,8 +42,8 @@ const srces = [
 ]
 const Featured = () => {
   return (
-    <Tabs variant={'enclosed'} fontFamily={'Saira'} mx={'2em'}>
-      <TabList>
+    <Tabs variant={'enclosed'} fontFamily={'Saira'} mx={'2em'} >
+      <TabList >
         <Tab>Projects</Tab>
       </TabList>
       <TabPanels>

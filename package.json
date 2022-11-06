@@ -1,6 +1,7 @@
 {
   "name": "2022portfolio",
   "version": "0.1.0",
+  "homepage": "https://paukky.github.io",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.1.2",
@@ -24,6 +25,8 @@
     "wouter": "^2.8.0-alpha.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
