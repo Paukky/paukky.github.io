@@ -24,12 +24,8 @@ const Home = () => {
             <Text fontSize={'4xl'} maxWidth={'16ch'}>
                 Hi, my name is Paul
             </Text>
-            <Text fontSize={'4xl'} maxWidth={'20ch'}>
-                I'm a Front End Developer from Canada
-            </Text>
-            <Text maxWidth={'40ch'} opacity={'90%'}>
-                Self-taught developer that has been on the grind since graduation.
-                I have been learning new technology and skills to prove to the employer that I'm useful and versatile.
+            <Text fontSize={'1rem'} maxWidth={'40ch'} fontStyle={'italic'}>
+                I'm a self-taught Front End Developer from Canada
             </Text>
             <HStack my={'1em'} spacing='15px' justifyContent={['center','flex-start','flex-start']}>
             <Link href="https://github.com/Paukky" isExternal>
