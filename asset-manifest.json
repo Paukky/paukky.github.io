@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.f1c312c9.css",
-    "main.js": "/static/js/main.a452e32c.js",
+    "main.js": "/static/js/main.a465e27b.js",
     "static/media/BlushBar.png": "/static/media/BlushBar.50eec1bdf44f6a226461.png",
-    "static/media/choi.png": "/static/media/choi.7a4d8dc3b126a386f5a1.png",
+    "static/media/choi.png": "/static/media/choi.c83937033786cf3fb9b1.png",
     "static/media/OnlyFantasia.png": "/static/media/OnlyFantasia.e3bfb44d679f3986897c.png",
     "static/media/Plushie.png": "/static/media/Plushie.e7415a9f38ce9953a511.png",
     "static/media/Easybank.png": "/static/media/Easybank.fd67886aecec580a975e.png",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
-    "static/media/Paul_Ly_Resume.pdf": "/static/media/Paul_Ly_Resume.da0a1557a52a95e3cf48.pdf",
+    "static/media/Paul_Ly_Resume.pdf": "/static/media/Paul_Ly_Resume.c99f81d90e081cb1defb.pdf",
     "static/media/saira-all-500-normal.woff": "/static/media/saira-all-500-normal.3371d67126d77a8c1f3a.woff",
     "static/media/AdviceGen.png": "/static/media/AdviceGen.9dc99b0c953d89fd755f.png",
     "static/media/Github.png": "/static/media/Github.22db967b23c261c549a4.png",
@@ -24,10 +24,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.f1c312c9.css.map": "/static/css/main.f1c312c9.css.map",
-    "main.a452e32c.js.map": "/static/js/main.a452e32c.js.map"
+    "main.a465e27b.js.map": "/static/js/main.a465e27b.js.map"
   },
   "entrypoints": [
     "static/css/main.f1c312c9.css",
-    "static/js/main.a452e32c.js"
+    "static/js/main.a465e27b.js"
   ]
 }
