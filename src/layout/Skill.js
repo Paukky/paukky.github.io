@@ -19,18 +19,7 @@ const Skill = () => {
     height={'100vh'}
     flexDir={'column'}
     align={'center'}
-    as={motion.div}
-    initial={{
-      opacity: 0,
-      y: 500
-    }}
-    whileInView={{  
-      opacity: 1,
-      y: 0
-    }}  
-    onViewportLeave={{
-      opacity: 0
-    }}
+
   >
     <Box mb={10}>
       <Heading  size={'3xl'} >Skills</Heading>
