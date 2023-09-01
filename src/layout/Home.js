@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Loader } from '@react-three/drei';
 import Scene from '../components/Scene';
@@ -13,9 +13,13 @@ import {
   Hide,
   Image
 } from '@chakra-ui/react';
+
 import '../Canvas.css'
 import Resume from '../assets/Paul_Ly_Resume.pdf'
 import Arrow from '../assets/downarrow.gif'
+import Skill from './Skill';
+import Project from '../components/Project';
+
 const Home = () => {
   return (
     <React.Fragment>
@@ -54,7 +58,8 @@ const Home = () => {
         </Hide>
         </Suspense>
         </Flex>
-        
+        <Skill/>
+        <Project/>
     </React.Fragment>
   )
 }

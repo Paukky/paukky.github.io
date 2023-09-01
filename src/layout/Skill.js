@@ -34,7 +34,7 @@ const Skill = () => {
   >
     <Box mb={10}>
       <Heading  size={'3xl'} >Skills</Heading>
-      <Text fontWeight={"light"}>These are the skills I acquired over my journey. something something</Text>
+      <Text fontWeight={"light"}my={1}>These are the skills I acquired over my journey.</Text>
     </Box>
     <Grid 
       templateColumns={'repeat(4,2fr)'} gap={10}

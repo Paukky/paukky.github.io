@@ -5,10 +5,6 @@ import React,{useRef} from 'react';
 import useScrollSnap from 'react-use-scroll-snap';
 import { ChakraProvider,extendTheme } from '@chakra-ui/react';
 import Home from './layout/Home';
-import Featured from './components/Featured';
-import Project from './components/Project';
-import Skill from './layout/Skill';
-import { Switch, Route } from 'wouter';
 import './Canvas.css'
 
 const theme = extendTheme({
@@ -32,15 +28,10 @@ const theme = extendTheme({
 })
 
 function App() {
-  const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 200, delay: 0 });
+
   return (  
       <ChakraProvider theme={theme}>
-        <div ref={scrollRef} >
-              <Home/>
-              <Skill/>
-              <Project/>
-        </div>
+          <Home/>
       </ChakraProvider> 
     
   );

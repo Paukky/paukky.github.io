@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Flex, SimpleGrid,Text, Icon} from '@chakra-ui/react';
+import {Box, Flex, SimpleGrid,Text, Icon} from '@chakra-ui/react';
 import {Tabs,Tab,TabList,TabPanel,TabPanels, TabIndicator} from '@chakra-ui/react';
 import {GoProject} from "react-icons/go"
 import {FaPaintBrush} from 'react-icons/fa'
@@ -9,6 +9,7 @@ import BlushBar from '../assets/BlushBar.png'
 import AdviceGen from '../assets/AdviceGen.png'
 import Ff14 from '../assets/FFXIV.png'
 import Easybank from '../assets/Easybank.png'
+import BanterBox from '../assets/banterbox.png'
 import Github from '../assets/Github.png'
 import Rollraiders from '../assets/Rollraider.png'
 import Choi from '../assets/choi.png'
@@ -24,7 +25,7 @@ const projects = [
     {
       img: Choi,
       alt: 'Choi Restaurant',
-      link: 'https://genuine-crostata-7d33cd.netlify.app/',
+      link: 'https://choitoronto.vercel.app/',
       desc: "The website revamp was undertaken to meet the client's requirements and deliver an updated look. A complete redesign of the website's appearance and functionality was executed. By comprehending the client's vision and incorporating their specifications, the goal was to create an aesthetically pleasing and user-friendly online presence that surpassed their expectations.",
       design: false
     },
@@ -35,6 +36,13 @@ const projects = [
       desc: 'As part of the Frontend Mentor challenge, the advice generator was skillfully recreated, providing an opportunity to learn and work with APIs for the first time. This accomplishment demonstrates the ability to adapt and acquire new skills in frontend development, showcasing a strong dedication to excel in the field.',
       design: false
     },
+    // {
+    //   img: BanterBox,
+    //   alt: "BanterBox",
+    //   link: 'https://zingy-valkyrie-606701.netlify.app/',
+    //   desc: "Although it's not fully finished yet, I was able to successfully deploy a functional real-time chatting application with Google login. This project marked my first time working with Firebase and collaborating with a team during a week-long hackathon.",
+    //   design: false
+    // },
   ]
 
   const design = [
@@ -61,7 +69,7 @@ const projects = [
   ]
 const Project = () => {
   return (
-    <Tabs height={'100vh'} mx={'2em'} mt={'-1em'} variant={'solid-rounded'} size={'lg'} align='center' isFitted>
+    <Tabs mx={'2em'} height={'75vh'} variant={'soft-rounded'} align='center' isFitted>
         <TabList  my={'4em'}>
           <Tab fontSize={'3xl'}>
             <Icon as={GoProject} mx='2'/>  
@@ -104,7 +112,6 @@ const Project = () => {
               </Flex>
           </TabPanel>
         </TabPanels>
-        
   </Tabs>        
   )
 }
