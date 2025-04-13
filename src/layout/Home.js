@@ -2,7 +2,7 @@ import React, { Suspense, } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Loader } from '@react-three/drei';
 import Scene from '../components/Scene';
-import {FaGithub, FaLinkedin, FaFilePdf} from 'react-icons/fa'
+import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {
   Box,
   Flex,
@@ -15,7 +15,6 @@ import {
 } from '@chakra-ui/react';
 
 import '../Canvas.css'
-import Resume from '../assets/Paul_Ly_Resume.pdf'
 import Arrow from '../assets/downarrow.gif'
 import Skill from './Skill';
 import Project from '../components/Project';
@@ -26,21 +25,19 @@ const Home = () => {
         <Flex height={"100vh"} marginY={5}>
           <Box textAlign={['center','left','left']} position={['relative','relative','absolute']} zIndex={1} mx={'2.5em'} overflow='hidden' alignSelf={'center'}>
             <Text fontSize={'6xl'} maxWidth={'20ch'}>
-                Hi, my name is Paul
+                Hi, my name is Paul Ly
             </Text>
             <Text fontSize={'lg'} maxWidth={'40ch'} fontStyle={'italic'}>
-                I'm a self-taught Front End Developer from Canada
+                I'm currently sutdying for my Computer Science Degree
             </Text>
             <HStack my={'1em'} spacing='15px' justifyContent={['center','flex-start','flex-start']}>
-            <Link href="https://github.com/Paukky" isExternal>
-              <Icon as={FaGithub} boxSize={'2em'} />
-            </Link>
-            <Link href="https://www.linkedin.com/in/paul-ly1993/" isExternal>
-              <Icon as={FaLinkedin} boxSize={'2em'} />
-            </Link>
-            <Link href={Resume} download>
-              <Icon as={FaFilePdf} boxSize={'2em'} alt={"Resume"}/>
-            </Link>
+              <Text>Contact :</Text>
+              <Link href="https://github.com/Paukky" isExternal>
+                <Icon as={FaGithub} boxSize={'2em'} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/paul-ly1993/" isExternal>
+                <Icon as={FaLinkedin} boxSize={'2em'} />
+              </Link>
             </HStack>
             <Flex  align={'center'} justifyContent={['center','flex-start','flex-start']}>
               
