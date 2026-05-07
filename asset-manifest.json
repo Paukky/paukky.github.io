@@ -1,13 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e395f2d0.css",
-    "main.js": "/static/js/main.c5213f66.js",
-    "static/media/choi.png": "/static/media/choi.95de4c0084480a409c86.png",
-    "static/media/Rollraider.png": "/static/media/Rollraider.68132bfb6b6f0f67b0c2.png",
-    "static/media/raidbin.png": "/static/media/raidbin.3c72febe1073b9f50541.png",
-    "static/media/Plushie.png": "/static/media/Plushie.e7415a9f38ce9953a511.png",
-    "static/media/FFXIV.png": "/static/media/FFXIV.f52fffb54dc5889e0a59.png",
-    "static/media/downarrow.gif": "/static/media/downarrow.b857303aae211f4b5d14.gif",
+    "main.css": "/static/css/main.b5c39e6d.css",
+    "main.js": "/static/js/main.a01616f8.js",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/saira-all-500-normal.woff": "/static/media/saira-all-500-normal.3371d67126d77a8c1f3a.woff",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
@@ -21,11 +15,11 @@
     "static/media/saira-vietnamese-500-normal.woff2": "/static/media/saira-vietnamese-500-normal.0c5f7f1096a75dd7e473.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
-    "main.e395f2d0.css.map": "/static/css/main.e395f2d0.css.map",
-    "main.c5213f66.js.map": "/static/js/main.c5213f66.js.map"
+    "main.b5c39e6d.css.map": "/static/css/main.b5c39e6d.css.map",
+    "main.a01616f8.js.map": "/static/js/main.a01616f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e395f2d0.css",
-    "static/js/main.c5213f66.js"
+    "static/css/main.b5c39e6d.css",
+    "static/js/main.a01616f8.js"
   ]
 }
