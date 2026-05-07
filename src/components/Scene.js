@@ -1,33 +1,42 @@
-import { OrthographicCamera } from '@react-three/drei';
-import { useFrame } from '@react-three/fiber';
-import React, { useRef } from 'react'
-import { Group } from 'three';
-import {Cat,Desk, Chair} from'../models';
+import { OrthographicCamera } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import React, { useRef,useEffect } from 'react'
+import { Cat, Desk, Chair } from '../models'
 
 const Scene = () => {
-  const box = useRef();
-  let radian = 2 * Math.PI * (25 / 360);
-  useFrame(({camera}) => {
-    box.current && void (box.current.rotation.y -= 0.0010, box.current.rotation.x += 0.00)
+  const box = useRef()
+  const cameraRef = useRef()
+
+  useFrame((_, delta) => {
+    if (box.current) {
+      box.current.rotation.y += delta * 0.05
+    }
   })
+
+  useEffect(() => {
+    if (cameraRef.current) {
+      cameraRef.current.lookAt(0, 0, 0) // 👈 center of your scene
+    }
+  }, [])
+
   return (
-  
-    <React.Fragment>
-        
-        <ambientLight/>
-        <pointLight position={[10,50, 30]} intensity={0.5} />
-        <OrthographicCamera
-        position={[0,-1,0]}
-        rotation={[0, 0, 0]}
-        
-        >    
-        <mesh ref={box} position={[1,0,0]}>
-            <Cat/>
-            <Desk/>
-            <Chair/>
-        </mesh>    
-        </OrthographicCamera>
-    </React.Fragment>
+    <>
+      <OrthographicCamera
+        ref={cameraRef}
+        makeDefault
+        position={[0, 10, 6]} // clearly above
+        zoom={60}
+      />
+
+      <ambientLight intensity={0.6} />
+      <pointLight position={[10, 20, 10]} intensity={1} />
+
+      <group ref={box} rotation={[-1, 0, 0]}>
+        <Cat />
+        <Desk />
+        <Chair />
+      </group>
+    </>
   )
 }
 

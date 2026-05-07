@@ -1,17 +1,40 @@
-import React from 'react'
-import { Flex, Text,Breadcrumb, BreadcrumbItem, BreadcrumbLink, Spacer, Box } from '@chakra-ui/react';
-const Navbar = () => {
-  return (
-    <Box p={3} bgColor={"#673C11"} fontFamily='Saira' display='flex' position={'sticky'}>
-        <Text>Paul Ly</Text>
-        <Spacer/>
-        <Breadcrumb separator=" ">
-            <BreadcrumbItem>
-                <BreadcrumbLink href='#'>Resume</BreadcrumbLink>
-            </BreadcrumbItem>
-        </Breadcrumb>
-    </Box>
-  )
-}
+import React from 'react';
+import {
+  Flex,
+  Heading,
+  HStack,
+  Button,
+} from '@chakra-ui/react';
 
-export default Navbar
+const NavBar = () => (
+  <Flex
+    as="nav"
+    position="fixed"
+    top="0"
+    w="100%"
+    zIndex="100"
+    bg="rgba(251, 249, 244, 0.9)"
+    backdropFilter="blur(10px)"
+    px={8}
+    py={4}
+    justify="space-between"
+    align="center"
+    borderBottom="1px solid"
+    borderColor="rgba(0,0,0,0.05)"
+  >
+    <Heading size="md" color="#4a443f" letterSpacing="tight">Paul Ly</Heading>
+    <HStack spacing={8} display={{ base: 'none', md: 'flex' }}>
+      <Button
+        bg="#98A98E"
+        color="white"
+        rounded="full"
+        _hover={{ bg: '#86987c' }}
+        px={6}
+      >
+        Download CV
+      </Button>
+    </HStack>
+  </Flex>
+);
+
+export default NavBar;

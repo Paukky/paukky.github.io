@@ -4,7 +4,7 @@ import '@fontsource/saira/500.css'
 import React,{useRef} from 'react';
 import useScrollSnap from 'react-use-scroll-snap';
 import { ChakraProvider,extendTheme } from '@chakra-ui/react';
-import Home from './layout/Home';
+import Home from './Home';
 import './Canvas.css'
 
 const theme = extendTheme({

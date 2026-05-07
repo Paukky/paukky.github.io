@@ -1,131 +1,159 @@
+import React from 'react';
 import {
-  Box,
-  Flex,
+  Container,
+  VStack,
   Heading,
   Text,
-  Image,
-  VStack,
+  SimpleGrid,
+  Icon,
+  HStack,
+  useColorModeValue,
 } from '@chakra-ui/react';
 
-import React from 'react';
+import {
+  FaCode,
+  FaLayerGroup,
+  FaServer,
+  FaDatabase,
+} from 'react-icons/fa';
+
 
 const categories = [
   {
-    title: 'Frontend',
-    items: [
-      {
-        name: 'React',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-      },
+    title: 'Frontend Development',
+    icon: FaLayerGroup,
+    iconColor: '#61DAFB',
+    skills: [
+      'React',
+      'Tailwind CSS',
     ],
   },
   {
-    title: 'Backend',
-    items: [
-      {
-        name: 'Node.js',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-      },
-      {
-        name: 'Express.js',
-        src: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=FFFFFF",
-      },
-      {
-        name: 'Spring Boot',
-        src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg',
-      },
+    title: 'Backend & Systems',
+    icon: FaServer,
+    iconColor: '#339933',
+    skills: [
+      'Node.js',
+      'REST APIs',
+      'Git',
+      'CLI Tools',
     ],
   },
   {
-    title: 'Database',
-    items: [
-      {
-        name: 'MongoDB',
-        src: 'https://www.svgrepo.com/show/331488/mongodb.svg',
-      },
-      {
-        name: 'MySQL',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-      },
+    title: 'Languages',
+    icon: FaCode,
+    iconColor: '#E69A8D',
+    skills: [
+      'JavaScript',
+      'TypeScript',
+      'Python',
+      'Java',
+      'Rust',
+      'SQL',
+      'HTML/CSS',
     ],
   },
   {
-    title: 'Tools',
-    items: [
-      {
-        name: 'Postman',
-        src: 'https://cdn.worldvectorlogo.com/logos/postman.svg',
-      },
-      {
-        name: 'Git',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-      },
-      {
-        name: 'JIRA',
-        src: 'https://cdn.worldvectorlogo.com/logos/jira-1.svg',
-      },
-    ],
-  },
-  {
-    title: 'Programming Languages',
-    items: [
-      {
-        name: 'JavaScript',
-        src: 'https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png',
-      },
-      {
-        name: 'HTML',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-      },
-      {
-        name: 'CSS',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-      },
-      {
-        name: 'C#',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
-      },
-      {
-        name: 'Java',
-        src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
-      },
+    title: 'Databases & Tools',
+    icon: FaDatabase,
+    iconColor: '#FF6C37',
+    skills: [
+      'MySQL',
+      'MongoDB',
+      'PostgreSQL',
+      'Postman',
+      'GitHub',
     ],
   },
 ];
 
-const SkillItem = ({ name, src }) => (
-  <VStack spacing={2} w="100px" textAlign="center">
-    <Image src={src} alt={name} boxSize="50px" />
-    <Text fontSize="md">{name}</Text>
-  </VStack>
-);
+const SkillCard = ({ name, icon, color }) => {
+  const bg = useColorModeValue('#ffffff', 'gray.800');
+  const border = useColorModeValue('#ece7df', 'gray.700');
 
-const SkillCategory = ({ title, items }) => (
-  <Box>
-    <Text fontSize="3xl" fontWeight="bold" mb={4}>
-      {title}
-    </Text>
-    <Flex wrap="wrap" gap={6}>
-      {items.map((item) => (
-        <SkillItem key={item.name} name={item.name} src={item.src} />
-      ))}
-    </Flex>
-  </Box>
-);
-
-const Skill = () => {
   return (
-    <Flex direction="column" p="2em" gap="2em">
-      <Heading fontSize="4xl">My Stack</Heading>
-      {categories.map((section) => (
-        <SkillCategory
-          key={section.title}
-          title={section.title}
-          items={section.items}
-        />
-      ))}
-    </Flex>
+    <HStack
+      spacing={3}
+      p={3}
+      rounded="xl"
+      bg="#302113"
+      border="1px solid"
+      borderColor={border}
+      transition="0.2s ease"
+      _hover={{
+        transform: 'translateY(-2px)',
+        borderColor: '#98A98E',
+      }}
+    >
+      <Icon as={icon} boxSize={5} color={color} />
+      <Text fontSize="sm" fontWeight="medium">
+        {name}
+      </Text>
+    </HStack>
   );
 };
 
-export default Skill;
+const SkillCategory = ({ title, icon, iconColor, skills }) => (
+  <VStack
+    bg="#fffbbcf3"
+    p={8}
+    rounded="3xl"
+    align="flex-start"
+    spacing={5}
+    position="relative"
+    boxShadow={`8px 8px 0 ${iconColor}20`}
+    transition="0.2s ease"
+    _hover={{
+      transform: 'translateY(-4px)',
+      boxShadow: `12px 12px 0 ${iconColor}30`,
+    }}
+  >
+    <HStack spacing={3}>
+      <Icon as={icon} boxSize={6} color={iconColor} />
+      <Heading size="sm" color="#000000">
+        {title}
+      </Heading>
+    </HStack>
+
+    <VStack align="flex-start" spacing={2} w="100%">
+      {skills.map((skill) => (
+        <Text
+          key={skill}
+          fontSize="sm"
+          color="#7a726a"
+          fontWeight="medium"
+        >
+          • {skill}
+        </Text>
+      ))}
+    </VStack>
+  </VStack>
+);
+
+const Skills = () => {
+
+
+  return (
+    <Container maxW="6xl" py={20} bg="">
+      <VStack spacing={8} align="stretch">
+        <Heading textAlign="center" size="2xl" color="#4a443f">
+          Skills & Technologies
+        </Heading>
+
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
+            {categories.map((category) => (
+                <SkillCategory
+                key={category.title}
+                title={category.title}
+                icon={category.icon}
+                iconColor={category.iconColor}
+                skills={category.skills}
+                />
+            ))}
+            </SimpleGrid>
+      </VStack>
+    </Container>
+  );
+};
+
+export default Skills;
